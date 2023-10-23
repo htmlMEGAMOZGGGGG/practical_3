@@ -8,11 +8,11 @@
    <a href="index.html">Назад на головну</a>
    <h3 id="Зміст">Зміст</h3>
        <ul>
-           <li><a href="#Розділ1">Базова інформація</a></li>
-           <li><a href="#Розділ2">Дитинство</a></li>
-           <li><a href="#Розділ3">Шкільні роки</a></li>
-           <li><a href="#Розділ4">Поза школою</a></li>
-           <li><a href="#Розділ5">Університет</a></li>
+           <li><a id="button" href="#Розділ1">Базова інформація</a></li>
+           <li><a id="button" href="#Розділ2">Дитинство</a></li>
+           <li><a id="button" href="#Розділ3">Шкільні роки</a></li>
+           <li><a id="button" href="#Розділ4">Поза школою</a></li>
+           <li><a id="button" href="#Розділ5">Університет</a></li>
        </ul>   
    <article>
        <h2 id="Розділ1">Базова інформація</h2>
@@ -73,14 +73,20 @@
 </body></html>
 
 <style>
-    a:link{
-        color:black
-    }
-a:hover {
+ a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue; /* Синій колір кнопки */
+    color: white; /* Колір тексту на кнопці (контрастний до синього) */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Анімація зміни кольору при наведенні і натисканні */
+}
+
+a.button:hover {
     background-color: magenta; /* Фіолетовий колір при наведенні */
 }
 
-a:active {
+a.button:active {
     background-color: yellow; /* Жовтий колір при натисканні */
 }
 </style>
